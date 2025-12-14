@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, #ffd6e8, #ffeaf4);
+    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #fff0f6;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+.judul {
+    color: #ff69b4;
+    animation: heartbeat 1.5s infinite;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: #ffe4f0;
+}
+
+button {
+    background: #ff85c1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.hasil {
+    margin-top: 15px;
+    color: #ff4d94;
+    font-size: 18px;
+    animation: pop 0.5s;
+}
+
+/* Animasi */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pop {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
